@@ -409,6 +409,14 @@ nav li a:hover{
 
 /* Section Activities */
 
+.containerActivities{
+  margin-top: 50px;
+}
+
+.container-list-activities h2{
+  margin-bottom: 30px;
+}
+
 .listActivities{
   gap: 25px;
 }
