@@ -13,20 +13,24 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-            <!--Header-->
-            <header class="flex">
-                <div class="logo">
-                    <img src="images/Booki.png" alt="Booki"/>
-                </div>
 
-                <!--Navigation-->
-                <nav class="flex">
-                    <ul class="flex">
-                        <li><a href="#containerHotels" >Hébergements</a></li>
-                        <li><a href="#containerActivities" >Activités</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <!--Header-->
+        <header class="flex">
+            <div class="logo">
+                <img src="images/Booki.png" alt="Booki"/>
+            </div>
+
+        <!--Navigation-->
+            <nav class="flex">
+                <ul class="flex">
+                    <li><a href="#containerHotels" >Hébergements</a></li>
+                    <li><a href="#containerActivities" >Activités</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Section Main-->
+        <main>
 
             <!--Search-->
             <div class="search">
@@ -36,9 +40,9 @@
                     <div class="mapIcon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <input type="search" class="searchInput" placeholder="Marseille, France">
+                <input type="search" class="searchInput" placeholder="Marseille, France">
                     <button class="searchButton">
-                        <span>Rechercher</span>
+                    <span>Rechercher</span>
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
@@ -67,27 +71,26 @@
                     </ul>
                     <div class="infoFilters flex">
                         <div class="iconInfo flex">
-                            <i class="fas fa-info"></i>
+                                <i class="fas fa-info"></i>
                         </div>
                         <span class="textInfo">Plus de 500 logements sont disponibles dans cette ville</span>
                     </div>
             </div>
             
-
-
-            <!--Section Main-->
-            <main>
+            <!--Container Hotels & Populars -->   
+                
             <div class="container flex">
+
                 <!--Section Hotels-->    
-                <section class="containerHotels flex" id="containerHotels">
+                <section class="containerHotels flex">
                     <h2 class="hotelsTitle">Hébergements à Marseille</h2>
                         <div class="container-card-hotel flex">
-                            <article class="card-hotel">
-                                <a href="#" class="card">
-                                    <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Cannebiere"/>
-                                    <div class="card-hotel-body flex">
-                                        <h3>Auberge la Cannebière</h3>
-                                        <p>Nuit à partir de 25<span>€</span></p>
+                        <article class="card-hotel">
+                            <a href="#" class="card">
+                                <img src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Cannebiere"/>
+                                <div class="card-hotel-body flex">
+                                    <h3>Auberge la Cannebière</h3>
+                                    <p>Nuit à partir de 25<span>€</span></p>
                                         <div class="card-hotel-rate">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -95,92 +98,93 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star" id="stargrey1"></i>
                                         </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="card-hotel">
+                            <a href="#" class="card">
+                                <img src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Port"/>
+                                <div class="card-hotel-body flex">
+                                    <h3>Hôtel du port</h3>
+                                    <p>Nuit à partir de 52€</p>
+                                    <div class="card-hotel-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
                                     </div>
-                                </a>
-                            </article>
-                            <article class="card-hotel">
-                                <a href="#" class="card">
-                                    <img src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Port"/>
-                                    <div class="card-hotel-body flex">
-                                        <h3>Hôtel du port</h3>
-                                        <p>Nuit à partir de 52€</p>
-                                        <div class="card-hotel-rate">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="card-hotel">
+                            <a href="#" class="card">
+                                <img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Mouettes"/>
+                                <div class="card-hotel-body flex">
+                                    <h3>Hôtel Les mouettes</h3>
+                                    <p>Nuit à partir de 76€</p>
+                                    <div class="card-hotel-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star" id="stargrey2"></i>
                                     </div>
-                                </a>
-                            </article>
-                            <article class="card-hotel">
-                                <a href="#" class="card">
-                                    <img src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Mouettes"/>
-                                    <div class="card-hotel-body flex">
-                                        <h3>Hôtel Les mouettes</h3>
-                                        <p>Nuit à partir de 76€</p>
-                                        <div class="card-hotel-rate">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star" id="stargrey2"></i>
-                                        </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="card-hotel">
+                            <a href="#" class="card">
+                                <img src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Mer"/>
+                                <div class="card-hotel-body flex">
+                                    <h3>Hôtel de la mer</h3>
+                                    <p>Nuit à partir de 46€</p>
+                                    <div class="card-hotel-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star" id="stargrey3"></i>
+                                        <i class="fas fa-star" id="stargrey4"></i>
                                     </div>
-                                </a>
-                            </article>
-                            <article class="card-hotel">
-                                <a href="#" class="card">
-                                    <img src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Mer"/>
-                                    <div class="card-hotel-body flex">
-                                        <h3>Hôtel de la mer</h3>
-                                        <p>Nuit à partir de 46€</p>
-                                        <div class="card-hotel-rate">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star" id="stargrey3"></i>
-                                            <i class="fas fa-star" id="stargrey4"></i>
-                                        </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="card-hotel">
+                            <a href="#" class="card">
+                                <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Panier"/>
+                                <div class="card-hotel-body flex">
+                                    <h3>Auberge Le Panier</h3>
+                                    <p>Nuit à partir de 23€</p>
+                                    <div class="card-hotel-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star" id="stargrey5"></i>
                                     </div>
-                                </a>
-                            </article>
-                            <article class="card-hotel">
-                                <a href="#" class="card">
-                                    <img src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Panier"/>
-                                    <div class="card-hotel-body flex">
-                                        <h3>Auberge Le Panier</h3>
-                                        <p>Nuit à partir de 23€</p>
-                                        <div class="card-hotel-rate">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star" id="stargrey5"></i>
-                                        </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="card-hotel">
+                            <a href="#" class="card">
+                                <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Amina"/>
+                                <div class="card-hotel-body flex">
+                                    <h3>Hôtel chez Amina</h3>
+                                    <p>Nuit à partir de 96€</p>
+                                    <div class="card-hotel-rate">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
                                     </div>
-                                </a>
-                            </article>
-                            <article class="card-hotel">
-                                <a href="#" class="card">
-                                    <img src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Amina"/>
-                                    <div class="card-hotel-body flex">
-                                        <h3>Hôtel chez Amina</h3>
-                                        <p>Nuit à partir de 96€</p>
-                                        <div class="card-hotel-rate">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </article>
-                            <a href="#" class="showMore">Affichez plus</a>
-                        </div>
-                    </section>
+                                </div>
+                            </a>
+                        </article>
+                        <a href="#" class="showMore">Affichez plus</a>
+                    </div>
+                </section>
+
                 <!--Section Populars-->
                 <section class="containerPopulars flex">
                     
@@ -188,7 +192,7 @@
                         <i class="fas fa-chart-line"></i>
                     </h2>
                     <div class="container-card-popular flex">
-                         <article class="card-popular flex">
+                        <article class="card-popular flex">
                             <a href="#" class="card flex">
                                 <div class="card-popular-img">
                                     <img src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Soleil"/>
@@ -287,6 +291,7 @@
                 </div>
             </section>
         </main>
+
         <!--Footer-->
         <footer>
             <div class="footer flex">
