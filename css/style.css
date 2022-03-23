@@ -1,5 +1,5 @@
 
-/* General */
+/************ General ************/
 
 * {
     box-sizing: border-box;
@@ -30,7 +30,7 @@ h2{
   font-weight: 700;
 }
 
-/* Header */
+/************ Header ************/
 
 header{
   justify-content: space-between;
@@ -62,7 +62,7 @@ nav li a:hover{
   color: #0065fc;
 }
 
-/* Search bar */
+/************ Search bar ************/
 
 .search{
   width: auto;
@@ -135,7 +135,7 @@ nav li a:hover{
 }
 
 
-/* Filters */
+/************ Filters ************/
 
 .filters{
   margin-top: 30px;
@@ -214,9 +214,9 @@ nav li a:hover{
   font-weight: 200;
 }
 
-/* Main */
+/************ Main ************/
 
-    /* Hotels */
+    /************ Hotels ************/
 
     .container{
       flex-wrap: wrap;
@@ -307,6 +307,10 @@ nav li a:hover{
       color: #0065fc;
     }
 
+    .card-hotel-rate .stargrey{
+      color: #f2f2f2;
+    }
+
     .showMore{
       width: 100%;
       font-weight: 700;
@@ -318,7 +322,7 @@ nav li a:hover{
       color: #0065fc;
     }
 
-    /* Populars */
+    /************ Populars ************/
 
     .containerPopulars{
       flex-wrap: wrap;
@@ -399,11 +403,11 @@ nav li a:hover{
       margin-right: auto;
     }
 
-    #stargrey1, #stargrey2, #stargrey3, #stargrey4, #stargrey5, #stargrey6, #stargrey7{
+    .card-popular-rate .stargrey{
       color: #f2f2f2;
     }
 
-/* Section Activities */
+/************ Section Activities ************/
 
 .containerActivities{
   margin-top: 50px;
@@ -430,6 +434,7 @@ nav li a:hover{
   margin: 0 0 30px 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
 .cardActivity h3{
   font-size: 17px;
   margin: 15px 0 5px 15px;
@@ -487,7 +492,7 @@ nav li a:hover{
   border-radius: 15px 15px 0 0;
 }
 
-/* Footer */
+/************ Footer ************/
 
 footer{
   padding: 40px 50px 50px;
@@ -526,13 +531,13 @@ footer{
     row-gap: 50px;
   }
   
-  /* Section Hotel*/
+  /************ Section Hotel ************/
 
   .containerHotels{
     flex-basis: 100%;
   }
 
-  /* Section Populars */
+  /************ Section Populars ************/
 
   .containerPopulars{
     flex-basis: 100%;
@@ -565,7 +570,7 @@ footer{
     width: 80px;
   }
 
-  /* Section Activities*/
+  /************ Section Activities ************/
 
   .containerActivities{
     margin-top: 50px;
@@ -622,13 +627,13 @@ footer{
 
 @media screen and (max-width: 768px)
 {
-/* General */
+/************ General ************/
 
 body{
     margin: 0;
   }
 
-/* Header */
+/************ Header ************/
 
 header{
     margin: 0;
@@ -667,7 +672,7 @@ nav li:hover{
     border-bottom-color:#0065FC;
   }
 
-/* Search bar */
+/************ Search bar ************/
 
 .search{
   width: auto;
@@ -743,7 +748,7 @@ nav li:hover{
   display: none;
   }
 
-/* Filters */
+/************ Filters ************/
 
 .filters{
   flex-direction: column;
@@ -766,14 +771,14 @@ nav li:hover{
   margin-right: 10px;
   }
 
-/* Main */
+/************ Main ************/
 
 .container{
   flex-wrap: wrap-reverse;
   row-gap: 10px;
 }
 
-/* Section Hotels */
+/************ Section Hotels ************/
 
 .card-hotel{
   flex: calc(100% - 1em);
@@ -801,7 +806,7 @@ nav li:hover{
 }
 
 
-/* Section Populars */
+/************ Section Populars ************/
 
 .popularsTitle{
   margin: 20px 15px 0px;
@@ -826,7 +831,7 @@ nav li:hover{
   width: 135px;
 }
 
-/* Section Activities */
+/************ Section Activities ************/
 
 .containerActivities{
   margin-top: 80px;
@@ -836,7 +841,7 @@ nav li:hover{
   margin: 0px 30px 0px 30px;
 }
   
-/* Footer */
+/************ Footer ************/
 
 footer{
   margin-top: -80px;
