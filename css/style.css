@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 0 50px 50px;
 }
 
 .flex {
@@ -35,6 +34,7 @@ h2{
 header{
   justify-content: space-between;
   height: 90px;
+  margin: 0 50px 30px;
 }
 
 .logo{
@@ -77,17 +77,15 @@ nav li a:hover{
 }
 
 .searchBar{
-  position:relative;
-  width: 420px;
+  margin-bottom: 30px;
   height: 50px;
 }
 
 .mapIcon{
-  position: absolute;
-  height: 50px;
   width: 50px;
   background-color: #f2f2f2;
   border-radius: 20px 0 0 20px;
+  flex-shrink: 0;
 }
 
 .mapIcon i{
@@ -97,10 +95,8 @@ nav li a:hover{
 }
 
 .searchInput{
-  position: absolute;
   width: 240px;
   height: 50px;
-  left: 50px;
   border: 1px solid #f2f2f2;
   padding: 0 0 0 15px;
   font-size: large;
@@ -112,8 +108,6 @@ nav li a:hover{
 }
 
 .searchButton{
-  position: absolute;
-  left: 290px;
   width: 130px;
   height: 50px;
   background-color: #0065fc;
@@ -123,6 +117,7 @@ nav li a:hover{
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .searchButton:hover{
@@ -138,14 +133,12 @@ nav li a:hover{
 /************ Filters ************/
 
 .filters{
-  margin-top: 30px;
   flex-wrap: wrap;
   align-items: baseline;
 }
 
 .titleFilters{
   margin-right: 30px;
-  margin-bottom: 15px;
   font-weight: 700;
 }
 
@@ -156,7 +149,6 @@ nav li a:hover{
 .filters li{
   height: 50px;
   display: flex;
-  align-self: center;
   margin-bottom: 10px;
 }
 
@@ -191,7 +183,6 @@ nav li a:hover{
 }
 
 .infoFilters{
-  width: 100%;
   margin-top: 20px;
 }
 
@@ -216,17 +207,19 @@ nav li a:hover{
 
 /************ Main ************/
 
+main{
+  margin: 0 50px 50px;
+}
+
     /************ Hotels ************/
 
     .container{
-      flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 4%;
     }
 
     .containerHotels{
       flex-wrap: wrap;
-      justify-content: space-between;
       background-color: #f2f2f2;
       flex-basis: 65%;
       border-radius: 20px;
@@ -249,7 +242,6 @@ nav li a:hover{
 
     .card-hotel {
       height: 230px;
-      min-width: 30%;
       padding: 5px 5px; 
       background-color: white;
       box-shadow: 0px 5px 20px #999;
@@ -336,7 +328,6 @@ nav li a:hover{
       margin: 30px 15px -90px 30px;
       justify-content: space-between;
       width: 100%;
-      height: 50px;
     }
 
     .containerPopulars i{
@@ -407,7 +398,7 @@ nav li a:hover{
       color: #f2f2f2;
     }
 
-/************ Section Activities ************/
+/************ Activities ************/
 
 .containerActivities{
   margin-top: 50px;
@@ -494,7 +485,7 @@ nav li a:hover{
 
 /************ Footer ************/
 
-footer{
+footer {
   padding: 40px 50px 50px;
   background-color: #f2f2f2;
 }
@@ -531,17 +522,16 @@ footer{
     row-gap: 50px;
   }
   
-  /************ Section Hotel ************/
+  /************ Hotel ************/
 
   .containerHotels{
     flex-basis: 100%;
   }
 
-  /************ Section Populars ************/
+  /************ Populars ************/
 
   .containerPopulars{
     flex-basis: 100%;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 25px 30px;
   }
@@ -570,10 +560,9 @@ footer{
     width: 80px;
   }
 
-  /************ Section Activities ************/
+  /************ Activities ************/
 
   .containerActivities{
-    margin-top: 50px;
     margin-bottom: -80px;
   }
 
@@ -675,7 +664,6 @@ nav li:hover{
 /************ Search bar ************/
 
 .search{
-  width: auto;
   margin: 10px 20px;
   }
 
@@ -687,20 +675,6 @@ nav li:hover{
   margin-bottom: 30px;
   }
 
-.searchBar{
-  position:relative;
-  width: 100%;
-  height: 50px;
-  }
-
-.mapIcon{
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  background-color: #f2f2f2;
-  border-radius: 20px 0 0 20px;
-  }
-
 .mapIcon i{
   position : relative;
   left: 40%;
@@ -708,32 +682,14 @@ nav li:hover{
   }
 
 .searchInput{
-  position: relative;
-  width: 260px;
-  height: 50px;
-  left: 50px;
-  border: 1px solid #f2f2f2;
-  padding: 0 0 0 15px;
-  font-size: large;
-  font-weight: 700;
-  }
-
-.searchInput::placeholder{
-  color: #000000;
+  width: 100%;
   }
 
 .searchButton{
-  position: absolute;
-  left: 270px;
+  position: relative;
+  left: -10px;
   width:50px;
-  height: 50px;
-  background-color: #0065FC;
-  border: none;
   border-radius: 15px 15px;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-  cursor: pointer;
   }
 
 .searchButton:hover{
@@ -773,12 +729,16 @@ nav li:hover{
 
 /************ Main ************/
 
+main{
+  margin: auto;
+}
+
 .container{
   flex-wrap: wrap-reverse;
   row-gap: 10px;
 }
 
-/************ Section Hotels ************/
+/************ Hotels ************/
 
 .card-hotel{
   flex: calc(100% - 1em);
@@ -806,7 +766,7 @@ nav li:hover{
 }
 
 
-/************ Section Populars ************/
+/************ Populars ************/
 
 .popularsTitle{
   margin: 20px 15px 0px;
@@ -831,7 +791,7 @@ nav li:hover{
   width: 135px;
 }
 
-/************ Section Activities ************/
+/************ Activities ************/
 
 .containerActivities{
   margin-top: 80px;
